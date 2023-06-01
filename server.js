@@ -54,3 +54,4 @@ app.listen(PORT, () => {
 // routes
 require("./routes/authRoutes.js")(app);
 require("./routes/userRoutes.js")(app);
+require("./routes/mavRoutes.js")(app);

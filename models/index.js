@@ -21,6 +21,7 @@ db.sequelize = sequelize;
 
 db.user = require("../models/user")(sequelize, Sequelize);
 db.role = require("../models/role")(sequelize, Sequelize);
+db.mav = require("../models/mavlinkdata")(sequelize, Sequelize);
 
 db.role.belongsToMany(db.user, {
   through: "user_roles",
